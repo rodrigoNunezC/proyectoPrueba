@@ -1,0 +1,2 @@
+copiar en la consola de node 
+node C:\Users\Rorro\Desktop\prueba\node_modules\http-server\bin\http-server

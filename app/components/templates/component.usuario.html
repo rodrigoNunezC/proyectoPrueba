@@ -1,0 +1,109 @@
+﻿<form name="vm.formSubmit" novalidate>
+    <div class="form-horizontal">
+        <br />
+        <div class="well">
+            <h5 class="page-header">{{cvm.ui.labelText}}</h5>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="form-group form-group-sm">
+                        <label class="col-xs-12 col-sm-5 control-label text-left">Username</label>
+                        <div class="col-xs-12 col-sm-4">
+                            <input type="text"
+                                   class="form-control"
+                                   id="txtUsername"
+                                   name="txtUsername"
+                                   placeholder="Username"
+                                   ng-model="cvm.ui.model.username" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="form-group form-group-sm">
+                        <label  class="col-xs-12 col-sm-4 control-label text-left">Website</label>
+                        <div class="col-xs-12 col-sm-5">
+                            <input type="text"
+                                   class="form-control"
+                                   id="txtWebsite"
+                                    placeholder="Username"
+                                   name="Website"
+                                   ng-model="cvm.ui.model.website" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="form-group form-group-sm">
+                        <label class="col-xs-12 col-sm-5 control-label text-left">Name</label>
+                        <div class="col-xs-12 col-sm-4">
+                            <input type="text"
+                                   class="form-control"
+                                   id="txtName"
+                                   name="txtName"
+                                   placeholder="Name"
+                                   ng-model="cvm.ui.model.name" 
+                                   ng-readonly="cvm.ui.isReadonlyNameUser"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="form-group form-group-sm">
+                        <label class="col-xs-12 col-sm-4 control-label text-left">City</label>
+                        <div class="col-xs-12 col-sm-5">
+                            <input type="text"
+                                   class="form-control"
+                                   id="txtCity"
+                                   name="txtCity"
+                                   placeholder="City"
+                                   ng-model="cvm.ui.model.address.city"
+                                   maxlength="12" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="form-group form-group-sm">
+                        <label class="col-xs-12 col-sm-5 control-label text-left">Phone</label>
+                        <div class="col-xs-12 col-sm-4">
+                            <input type="text"
+                                   class="form-control"
+                                   id="txtPhone"
+                                   name="txtPhone"
+                                   placeholder="Phone"
+                                   ng-model="cvm.ui.model.phone"
+                                   required />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="form-group form-group-sm">
+                        <label  class="col-xs-12 col-sm-4 control-label text-left">Email</label>
+                        <div class="col-xs-12 col-sm-5">
+                            <input type="email"
+                                   class="form-control"
+                                   id="txtEmail"
+                                   name="txtEmail"
+                                   placeholder="Email"
+                                   ng-model="cvm.ui.model.email"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="pull-right">
+            <button id="btnLimpiar" class="btn btn-sm btn-default" ng-click="cvm.fx.cleanInputs();">
+                limpiar campos
+            </button>
+            <button id="btnGrabar" class="btn btn-sm btn-primary" ng-click="cvm.fx.sendUpdateParent()">
+                actualizar
+            </button>
+        </div>
+    </div>
+</form>

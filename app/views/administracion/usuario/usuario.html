@@ -1,0 +1,21 @@
+﻿
+<div class="mainContentTopPadding">
+    <div class="container">
+        <fieldset ng-disabled="$root.waitingForHttp" ng-show="vm.ui.view.active == 'usuarios'">
+          
+            <div class=" form-group form-group-sm">
+
+                <component-lookup-usuario form-submit="vm.formSubmit"
+                                          view="vm.ui.view"
+                                          label-class="col-xs-12 col-sm-1 control-label"
+                                          label-text="Buscar Usuario">
+                </component-lookup-usuario>
+            </div>
+
+
+        </fieldset>
+
+     
+
+    </div>
+</div>

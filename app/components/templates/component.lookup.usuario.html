@@ -1,0 +1,44 @@
+﻿ <script type="text/javascript" src="./bower_components/angular-toastr/dist/angular-toastr.tpls.min.js"></script> 
+
+<div class="mainContentTopPadding">
+    <div class="container-fluid">
+        <h2 class="page-header lead ntm" id="titleForm">{{cvm.ui.labelText}}</h2>
+        <div class="form-group form-group-sm">
+            <label for="txtUsername" ng-class="cvm.ui.labelClass">Username</label>
+            <div class="col-xs-12 col-sm-4">
+                <div class="input-group">
+                    <input type="text"
+                           class="form-control"
+                           id="txtUsername"
+                           name="txtUsername"
+                           placeholder="Username"
+                           ng-model="cvm.ui.model.username"
+                           ng-blur="cvm.fx.getUserByUsername();" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-sm btn-default" type="button"
+                                id="btnLookupCentroDeGestion"
+                                ng-click="cvm.fx.showLookupUsuarios();">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<component-lookup-usuarios ng-show="cvm.ui.view.active =='componentLookupUsuarios'"
+                           view="cvm.ui.view.active"
+                           label-text="Lista de usuarios">
+</component-lookup-usuarios>
+
+
+<component-usuario ng-show="cvm.ui.view.active =='componentUsuario'"
+                   view="cvm.ui.view.active"
+                   label-text="Información del usuario"
+                   is-readonly-name-user="true">
+</component-usuario>
+
+

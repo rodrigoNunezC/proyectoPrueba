@@ -1,0 +1,19 @@
+﻿<div class="pull-left" ng-if="dvmpg.pager.pages.length>0">
+    <ul ng-if="dvmpg.pager.pages.length" class="pagination pagination-sm ntm nbm">
+        <li ng-class="{disabled:dvmpg.pager.currentPage === 1}">
+            <a ng-click="dvmpg.setPage(1)"><i class="fa fa-fast-backward"></i></a>
+        </li>
+        <li ng-class="{disabled:dvmpg.pager.currentPage === 1}">
+            <a ng-click="dvmpg.setPage((dvmpg.pager.currentPage > 1? dvmpg.pager.currentPage - 1 : 1))"><i class="fa fa-step-backward"></i></a>
+        </li>
+        <li ng-repeat="page in dvmpg.pager.pages" ng-class="{active:dvmpg.pager.currentPage === page}">
+            <a ng-click="dvmpg.setPage(page)">{{page}}</a>
+        </li>
+        <li ng-class="{disabled:dvmpg.pager.currentPage === dvmpg.pager.totalPages}">
+            <a ng-click="dvmpg.setPage((dvmpg.pager.currentPage === dvmpg.pager.totalPages ? dvmpg.pager.totalPages : dvmpg.pager.currentPage + 1))"><i class="fa fa-step-forward"></i></a>
+        </li>
+        <li ng-class="{disabled:dvmpg.pager.currentPage === dvmpg.pager.totalPages}">
+            <a ng-click="dvmpg.setPage(dvmpg.pager.totalPages)"><i class="fa fa-fast-forward"></i></a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,13 @@
+{
+  "name": "angular-locale_es",
+  "_cacheHeaders": {
+    "ETag": "\"12f9b114860cf03d8c7247d6230c4f71b35dad0f\"",
+    "Content-Length": "2403",
+    "Content-Type": "text/plain; charset=utf-8"
+  },
+  "_release": "e-tag:12f9b1148",
+  "main": "index.js",
+  "_source": "https://raw.githubusercontent.com/angular/bower-angular-i18n/master/angular-locale_es.js",
+  "_target": "*",
+  "_originalSource": "https://raw.githubusercontent.com/angular/bower-angular-i18n/master/angular-locale_es.js"
+}
