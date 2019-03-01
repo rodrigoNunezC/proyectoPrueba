@@ -3,12 +3,7 @@ var http = require("http");
 http.createServer(function(req, res){
 
 
-console.log('primer cambio de archivo');
-console.log('primer cambio de archivo');
-console.log('primer cambio de archivo');
-console.log('primer cambio de archivo');
-console.log('primer cambio de archivo');
-console.log('primer cambio de archivo');
+
 console.log('primer cambio de archivo');
 console.log('existe cambio');
 
