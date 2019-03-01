@@ -4,6 +4,13 @@ http.createServer(function(req, res){
 
 
 console.log('primer cambio de archivo');
+console.log('primer cambio de archivo');
+console.log('primer cambio de archivo');
+console.log('primer cambio de archivo');
+console.log('primer cambio de archivo');
+console.log('primer cambio de archivo');
+console.log('primer cambio de archivo');
+console.log('existe cambio');
 
 
 console.log("server ejecutandose en http://127.0.0.1:3000/");
