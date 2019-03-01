@@ -5,6 +5,8 @@ http.createServer(function(req, res){
 
 
 console.log('primer cambio de archivo');
+
+console.log('otro cambio');
 console.log('existe cambio');
 
 
